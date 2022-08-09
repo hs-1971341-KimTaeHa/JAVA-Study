@@ -12,19 +12,24 @@ public class AccountingApp {
 		double expense = valueOfSupply * expenseRate;
 		double income = valueOfSupply - expense;
 
-		double dividend1;
-		double dividend2;
-		double dividend3;
+		double[] dividendRates = new double[3];
+		dividendRates[0] = 0.5;
+		dividendRates[1] = 0.3;
+		dividendRates[2] = 0.2;
 		
-		if(income > 10000) {
-			dividend1 = income * 0.5;
-			dividend2 = income * 0.3;
-			dividend3 = income * 0.2;
-		} else {
-			dividend1 = income * 1.0;
-			dividend2 = income * 0;
-			dividend3 = income * 0;
-		}
+		double dividend1 = income * dividendRates[0];
+		double dividend2 = income * dividendRates[1];
+		double dividend3 = income * dividendRates[2];
+		
+//		if(income > 10000) {
+//			dividend1 = income * dividendRates[0];
+//			dividend2 = income * dividendRates[1];
+//			dividend3 = income * dividendRates[2];
+//		} else {
+//			dividend1 = income * 1.0;
+//			dividend2 = income * 0;
+//			dividend3 = income * 0;
+//		}
 		
 		
 		System.out.println("Value of supply : " + valueOfSupply);
