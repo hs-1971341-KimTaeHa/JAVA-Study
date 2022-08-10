@@ -1,6 +1,8 @@
 class Print {
 	public String delimiter = "";
-	
+	public Print(String delimiter) {
+		this.delimiter = delimiter;
+	}
 	public void A() {
 		System.out.println(delimiter);
 		System.out.println("A");
@@ -17,13 +19,11 @@ class Print {
 public class MyOOP {
 
 	public static void main(String[] args) {
-		Print p1 = new Print();
-		p1.delimiter = "****";
+		Print p1 = new Print("****");
 		p1.A();
 		p1.B();
 
-		Print p2 = new Print();
-		p2.delimiter = "----";
+		Print p2 = new Print("----");
 		p2.A();
 		p2.B();
 		
