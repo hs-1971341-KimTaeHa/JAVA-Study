@@ -8,6 +8,12 @@ class Cal3 extends Cal {
 	public int minus(int v1, int v2) {
 		return v1-v2;
 	}
+	
+	// overriding 함수 재정의
+	public int sum(int v1, int v2) {
+		System.out.println("Cal3!!");
+		return v1+v2;
+	}
 }
 
 
