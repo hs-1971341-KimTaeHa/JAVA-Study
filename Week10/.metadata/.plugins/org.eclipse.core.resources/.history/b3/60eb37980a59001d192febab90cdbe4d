@@ -1,0 +1,8 @@
+
+public class JFrameTest {
+
+	public static void main(String[] args) {
+		JBasicFrame f = new JBasicFrame();
+	}
+
+}

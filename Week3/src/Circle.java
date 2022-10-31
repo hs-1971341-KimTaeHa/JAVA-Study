@@ -1,9 +1,14 @@
 
 public class Circle {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	double radius;
+	
+	double getcircumference() {
+		return 2*3.14*radius;
+	}
+	
+	double getArea() {
+		return 3.14 * radius * radius;
 	}
 
 }

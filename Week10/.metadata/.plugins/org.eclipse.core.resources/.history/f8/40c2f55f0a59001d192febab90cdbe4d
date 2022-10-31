@@ -1,0 +1,6 @@
+import javax.swing.JFrame;
+public class JFrame2 extends JFrame {
+	public JFrame2() {
+		super("Frame Test2");
+	}
+}

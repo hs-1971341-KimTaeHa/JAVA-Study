@@ -1,0 +1,10 @@
+import javax.swing.JFrame;
+
+public class JBasicFrame {
+	private JFrame frame;
+	
+	public JBasicFrame() {
+		frame = new JFrame();
+	}
+
+}
